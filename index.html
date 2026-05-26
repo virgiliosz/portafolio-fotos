@@ -7,9 +7,7 @@
   <title>Virgilio Sánchez</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="estilos.css" />
 </head>
 
@@ -18,28 +16,21 @@
   <!-- ═══ NAV ════════════════════════════════════ -->
   <nav id="navbar">
     <span class="nav-logo">Virgilio</span>
-
     <ul class="nav-links">
       <li><a href="#sobre-mi">Sobre mí</a></li>
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#servicios">Servicios</a></li>
     </ul>
-
     <a href="#contacto" class="nav-contact">Reservar sesión</a>
   </nav>
 
 
   <!-- ═══ HERO ════════════════════════════════════ -->
   <section id="hero">
-    <!--
-      Reemplaza .hero-bg por: _MG_3457.JPG
-      <img src="hero.jpg" alt="Fotografía destacada" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
-    -->
     <div class="hero-bg">
-      <img src="Fotos/Arquitectura/_MG_3457.JPG" alt="Tu Nombre, fotógrafo" />
+      <img src="Fotos/Arquitectura/_MG_3457.JPG" alt="Fotografía destacada" />
     </div>
     <div class="hero-overlay"></div>
-
     <div class="hero-content">
       <p class="hero-eyebrow">Virgilio Sánchez · Saltillo, México</p>
       <h1 class="hero-title">
@@ -48,7 +39,6 @@
       </h1>
       <p class="hero-sub">Retrato &nbsp;·&nbsp; Videos &nbsp;·&nbsp; Automóvil</p>
     </div>
-
     <div class="hero-scroll">
       <div class="scroll-line"></div>
       <span>Scroll</span>
@@ -61,12 +51,8 @@
     <div class="container">
       <div class="inner">
 
-        <!--
-          Reemplaza este div por:
-          <img src="portrait.jpg" alt="Tu Nombre, fotógrafo" style="aspect-ratio:3/4;object-fit:cover;" />
-        -->
         <div class="about-photo">
-          <img src="Fotos/Vir_Grey_-15.jpg" alt="Tu Nombre, fotógrafo" />
+          <img src="Fotos/Vir_Grey_-15.jpg" alt="Virgilio Sánchez, fotógrafo" />
         </div>
 
         <div class="about-text reveal">
@@ -82,7 +68,6 @@
             proyectos disfrutas más. Las personas quieren conocer la mirada
             detrás de la lente.
           </p>
-
           <div class="about-stats">
             <div>
               <div class="stat-num">2+</div>
@@ -117,90 +102,15 @@
         </div>
         <div class="gallery-filters">
           <button class="filter-btn active" data-cat="all">Todo</button>
+          <button class="filter-btn" data-cat="automovil">Automóvil</button>
           <button class="filter-btn" data-cat="retrato">Retrato</button>
-          <button class="filter-btn" data-cat="paisaje">Paisaje</button>
-          <button class="filter-btn" data-cat="editorial">Editorial</button>
         </div>
       </div>
 
       <div class="masonry" id="gallery">
+        <!-- Las tarjetas se generan automáticamente desde main.js -->
+      </div>
 
-        <!-- Cada .masonry-item es una fotografía.
-             Reemplaza .photo-placeholder por <img src="foto.jpg" alt="..."> -->
-
-        <div class="masonry-item reveal" data-cat="retrato">
-          <div class="photo-placeholder">[ Foto 1 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Retrato</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="paisaje">
-          <div class="photo-placeholder">[ Foto 2 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Paisaje</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="editorial">
-          <div class="photo-placeholder">[ Foto 3 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Editorial</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="retrato">
-          <div class="photo-placeholder">[ Foto 4 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Retrato</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="paisaje">
-          <div class="photo-placeholder">[ Foto 5 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Paisaje</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="editorial">
-          <div class="photo-placeholder">[ Foto 6 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Editorial</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="retrato">
-          <div class="photo-placeholder">[ Foto 7 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Retrato</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="paisaje">
-          <div class="photo-placeholder">[ Foto 8 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Paisaje</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-        <div class="masonry-item reveal" data-cat="editorial">
-          <div class="photo-placeholder">[ Foto 9 ]</div>
-          <div class="overlay">
-            <span class="overlay-cat">Editorial</span>
-            <span class="overlay-title">Nombre de la serie</span>
-          </div>
-        </div>
-
-      </div><!-- /masonry -->
     </div>
   </section>
 
@@ -214,49 +124,31 @@
         <p class="section-label">Servicios</p>
         <h2 class="section-title">¿Qué puedo hacer<br /><em>por ti?</em></h2>
       </div>
-
       <div class="services-grid">
-
         <div class="service-card reveal">
           <div class="service-num">01</div>
           <h3 class="service-name">Retrato personal</h3>
-          <p class="service-desc">
-            Sesiones individuales o en pareja en locación o estudio.
-            Enfocadas en capturar tu esencia con naturalidad y autenticidad.
-          </p>
+          <p class="service-desc">Sesiones individuales o en pareja en locación o estudio. Enfocadas en capturar tu esencia con naturalidad y autenticidad.</p>
           <p class="service-price">Desde $XXX MXN · 2 horas</p>
         </div>
-
         <div class="service-card reveal">
           <div class="service-num">02</div>
           <h3 class="service-name">Fotografía editorial</h3>
-          <p class="service-desc">
-            Para marcas, revistas y proyectos creativos. Dirección
-            de arte incluida. Entrega de imágenes editadas en alta resolución.
-          </p>
+          <p class="service-desc">Para marcas, revistas y proyectos creativos. Dirección de arte incluida. Entrega de imágenes editadas en alta resolución.</p>
           <p class="service-price">Cotización personalizada</p>
         </div>
-
         <div class="service-card reveal">
           <div class="service-num">03</div>
           <h3 class="service-name">Paisaje &amp; viaje</h3>
-          <p class="service-desc">
-            Expediciones fotográficas y proyectos documentales.
-            Disponible para viajes nacionales e internacionales.
-          </p>
+          <p class="service-desc">Expediciones fotográficas y proyectos documentales. Disponible para viajes nacionales e internacionales.</p>
           <p class="service-price">Cotización personalizada</p>
         </div>
-
         <div class="service-card reveal">
           <div class="service-num">04</div>
           <h3 class="service-name">Impresiones de arte</h3>
-          <p class="service-desc">
-            Impresiones de edición limitada firmadas. Disponibles en
-            distintos formatos y materiales de alta calidad.
-          </p>
+          <p class="service-desc">Impresiones de edición limitada firmadas. Disponibles en distintos formatos y materiales de alta calidad.</p>
           <p class="service-price">Desde $XXX MXN · Envío incluido</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -271,11 +163,7 @@
           <p class="section-label">Contacto</p>
           <h2 class="section-title">Hablemos de<br /><em>tu proyecto</em></h2>
           <br />
-          <p>
-            Cuéntame qué tienes en mente. Respondo en menos de 48 horas
-            y con gusto agendamos una llamada sin compromiso.
-          </p>
-
+          <p>Cuéntame qué tienes en mente. Respondo en menos de 48 horas y con gusto agendamos una llamada sin compromiso.</p>
           <div class="contact-detail">
             <div class="contact-row">
               <span>Correo</span>
@@ -287,7 +175,7 @@
             </div>
             <div class="contact-row">
               <span>Ubicación</span>
-              <span>Ciudad, México</span>
+              <span>Saltillo, México</span>
             </div>
             <div class="contact-row">
               <span>Disponibilidad</span>
@@ -330,7 +218,7 @@
 
   <!-- ═══ FOOTER ════════════════════════════════════ -->
   <footer>
-    <span class="footer-copy">© 2025 Tu Nombre. Fotografía. Todos los derechos reservados.</span>
+    <span class="footer-copy">© 2025 Virgilio Sánchez. Fotografía. Todos los derechos reservados.</span>
     <div class="footer-social">
       <a href="https://www.instagram.com/virgilio_sanchez/" target="_blank" rel="noopener">Instagram</a>
     </div>
@@ -339,87 +227,14 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <span class="lightbox-close" id="lightbox-close">✕ Cerrar</span>
-    <div class="lightbox-img" id="lightbox-content">[ Imagen ampliada ]</div>
+    <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+    <div class="lightbox-img" id="lightbox-content"></div>
+    <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+    <span class="lightbox-counter" id="lightbox-counter"></span>
   </div>
 
-
-  <!-- ═══ JAVASCRIPT ══════════════════════════════ -->
-  <script>
-    /* Nav al hacer scroll */
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-
-    /* Animaciones de entrada */
-    const revealEls = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 60);
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => revealObserver.observe(el));
-
-    /* Filtros de galería */
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.masonry-item');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const cat = btn.dataset.cat;
-
-        galleryItems.forEach(item => {
-          const show = cat === 'all' || item.dataset.cat === cat;
-          item.style.opacity = show ? '1' : '0.2';
-          item.style.pointerEvents = show ? 'auto' : 'none';
-        });
-      });
-    });
-
-    /* Lightbox */
-    const lightbox = document.getElementById('lightbox');
-    const lightboxContent = document.getElementById('lightbox-content');
-    const lightboxClose = document.getElementById('lightbox-close');
-
-    galleryItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const img = item.querySelector('img');
-        if (img) {
-          lightboxContent.innerHTML = '';
-          const clone = img.cloneNode();
-          clone.style.cssText = 'max-width:85vw;max-height:85vh;object-fit:contain;';
-          lightboxContent.appendChild(clone);
-        }
-        lightbox.classList.add('open');
-      });
-    });
-
-    lightboxClose.addEventListener('click', () => lightbox.classList.remove('open'));
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) lightbox.classList.remove('open');
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') lightbox.classList.remove('open');
-    });
-
-    /* Formulario */
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.textContent = 'Mensaje enviado ✓';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Enviar mensaje';
-        btn.disabled = false;
-        e.target.reset();
-      }, 3500);
-    }
-  </script>
+  <!-- Script JavaScript -->
+  <script src="main.js"></script>
 
 </body>
 
