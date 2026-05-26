@@ -157,6 +157,26 @@ const series = {
           "Fotos/Automovil/Golf/foto70.jpg",
           "Fotos/Automovil/Golf/foto71.jpg"
         ]
+      },
+      "hulk": {
+        portada: "Fotos/Automovil/Hulk/foto1.jpg",
+        titulo: "Hulk",
+        fotos: [
+          "Fotos/Automovil/Hulk/foto1.jpg",
+          "Fotos/Automovil/Hulk/foto2.jpg",
+          "Fotos/Automovil/Hulk/foto3.jpg",
+          "Fotos/Automovil/Hulk/foto4.jpg",
+          "Fotos/Automovil/Hulk/foto5.jpg",
+          "Fotos/Automovil/Hulk/foto6.jpg",
+          "Fotos/Automovil/Hulk/foto7.jpg",
+          "Fotos/Automovil/Hulk/foto8.jpg",
+          "Fotos/Automovil/Hulk/foto9.jpg",
+          "Fotos/Automovil/Hulk/foto10.jpg",
+          "Fotos/Automovil/Hulk/foto11.jpg",
+          "Fotos/Automovil/Hulk/foto12.jpg",
+          "Fotos/Automovil/Hulk/foto13.jpg",
+          "Fotos/Automovil/Hulk/foto14.jpg"
+        ]
       }
     }
   },
@@ -213,6 +233,181 @@ const series = {
         ]
       }
     }
+  },
+  "paisajes": {
+    titulo: "Paisajes",
+    series: {
+      "rancho": {
+        portada: "Fotos/Paisajes/Rancho/foto34.jpg",
+        titulo: "Rancho",
+        fotos: [
+          "Fotos/Paisajes/Rancho/foto1.jpg",
+          "Fotos/Paisajes/Rancho/foto2.jpg",
+          "Fotos/Paisajes/Rancho/foto3.jpg",
+          "Fotos/Paisajes/Rancho/foto4.jpg",
+          "Fotos/Paisajes/Rancho/foto5.jpg",
+          "Fotos/Paisajes/Rancho/foto6.jpg",
+          "Fotos/Paisajes/Rancho/foto7.jpg",
+          "Fotos/Paisajes/Rancho/foto8.jpg",
+          "Fotos/Paisajes/Rancho/foto9.jpg",
+          "Fotos/Paisajes/Rancho/foto10.jpg",
+          "Fotos/Paisajes/Rancho/foto11.jpg",
+          "Fotos/Paisajes/Rancho/foto12.jpg",
+          "Fotos/Paisajes/Rancho/foto13.jpg",
+          "Fotos/Paisajes/Rancho/foto14.jpg",
+          "Fotos/Paisajes/Rancho/foto15.jpg",
+          "Fotos/Paisajes/Rancho/foto16.jpg",
+          "Fotos/Paisajes/Rancho/foto17.jpg",
+          "Fotos/Paisajes/Rancho/foto18.jpg",
+          "Fotos/Paisajes/Rancho/foto19.jpg",
+          "Fotos/Paisajes/Rancho/foto20.jpg",
+          "Fotos/Paisajes/Rancho/foto21.jpg",
+          "Fotos/Paisajes/Rancho/foto22.jpg",
+          "Fotos/Paisajes/Rancho/foto23.jpg",
+          "Fotos/Paisajes/Rancho/foto24.jpg",
+          "Fotos/Paisajes/Rancho/foto25.jpg",
+          "Fotos/Paisajes/Rancho/foto26.jpg",
+          "Fotos/Paisajes/Rancho/foto27.jpg",
+          "Fotos/Paisajes/Rancho/foto28.jpg",
+          "Fotos/Paisajes/Rancho/foto29.jpg",
+          "Fotos/Paisajes/Rancho/foto30.jpg",
+          "Fotos/Paisajes/Rancho/foto31.jpg",
+          "Fotos/Paisajes/Rancho/foto32.jpg",
+          "Fotos/Paisajes/Rancho/foto33.jpg",
+          "Fotos/Paisajes/Rancho/foto34.jpg",
+          "Fotos/Paisajes/Rancho/foto35.jpg",
+          "Fotos/Paisajes/Rancho/foto36.jpg",
+          "Fotos/Paisajes/Rancho/foto37.jpg",
+          "Fotos/Paisajes/Rancho/foto38.jpg",
+          "Fotos/Paisajes/Rancho/foto39.jpg",
+          "Fotos/Paisajes/Rancho/foto40.jpg",
+          "Fotos/Paisajes/Rancho/foto41.jpg",
+          "Fotos/Paisajes/Rancho/foto42.jpg",
+          "Fotos/Paisajes/Rancho/foto43.jpg",
+          "Fotos/Paisajes/Rancho/foto44.jpg",
+          "Fotos/Paisajes/Rancho/foto45.jpg"
+        ]
+      },
+      "lirios": {
+        portada: "Fotos/Paisajes/Lirios/foto27.jpg",
+        titulo: "Lirios",
+        fotos: [
+          "Fotos/Paisajes/Lirios/foto1.jpg",
+          "Fotos/Paisajes/Lirios/foto2.jpg",
+          "Fotos/Paisajes/Lirios/foto3.jpg",
+          "Fotos/Paisajes/Lirios/foto4.jpg",
+          "Fotos/Paisajes/Lirios/foto5.jpg",
+          "Fotos/Paisajes/Lirios/foto6.jpg",
+          "Fotos/Paisajes/Lirios/foto7.jpg",
+          "Fotos/Paisajes/Lirios/foto8.jpg",
+          "Fotos/Paisajes/Lirios/foto9.jpg",
+          "Fotos/Paisajes/Lirios/foto10.jpg",
+          "Fotos/Paisajes/Lirios/foto11.jpg",
+          "Fotos/Paisajes/Lirios/foto12.jpg",
+          "Fotos/Paisajes/Lirios/foto13.jpg",
+          "Fotos/Paisajes/Lirios/foto14.jpg",
+          "Fotos/Paisajes/Lirios/foto15.jpg",
+          "Fotos/Paisajes/Lirios/foto16.jpg",
+          "Fotos/Paisajes/Lirios/foto17.jpg",
+          "Fotos/Paisajes/Lirios/foto18.jpg",
+          "Fotos/Paisajes/Lirios/foto19.jpg",
+          "Fotos/Paisajes/Lirios/foto20.jpg",
+          "Fotos/Paisajes/Lirios/foto21.jpg",
+          "Fotos/Paisajes/Lirios/foto22.jpg",
+          "Fotos/Paisajes/Lirios/foto23.jpg",
+          "Fotos/Paisajes/Lirios/foto24.jpg",
+          "Fotos/Paisajes/Lirios/foto25.jpg",
+          "Fotos/Paisajes/Lirios/foto26.jpg",
+          "Fotos/Paisajes/Lirios/foto27.jpg",
+          "Fotos/Paisajes/Lirios/foto28.jpg",
+          "Fotos/Paisajes/Lirios/foto29.jpg",
+          "Fotos/Paisajes/Lirios/foto30.jpg",
+          "Fotos/Paisajes/Lirios/foto31.jpg",
+          "Fotos/Paisajes/Lirios/foto32.jpg",
+          "Fotos/Paisajes/Lirios/foto33.jpg",
+          "Fotos/Paisajes/Lirios/foto34.jpg",
+          "Fotos/Paisajes/Lirios/foto35.jpg",
+          "Fotos/Paisajes/Lirios/foto36.jpg",
+          "Fotos/Paisajes/Lirios/foto37.jpg",
+          "Fotos/Paisajes/Lirios/foto38.jpg",
+          "Fotos/Paisajes/Lirios/foto39.jpg",
+          "Fotos/Paisajes/Lirios/foto40.jpg",
+          "Fotos/Paisajes/Lirios/foto41.jpg",
+          "Fotos/Paisajes/Lirios/foto42.jpg",
+          "Fotos/Paisajes/Lirios/foto43.jpg",
+          "Fotos/Paisajes/Lirios/foto44.jpg",
+          "Fotos/Paisajes/Lirios/foto45.jpg",
+          "Fotos/Paisajes/Lirios/foto46.jpg",
+          "Fotos/Paisajes/Lirios/foto47.jpg",
+          "Fotos/Paisajes/Lirios/foto48.jpg",
+          "Fotos/Paisajes/Lirios/foto49.jpg",
+          "Fotos/Paisajes/Lirios/foto50.jpg",
+          "Fotos/Paisajes/Lirios/foto51.jpg",
+          "Fotos/Paisajes/Lirios/foto52.jpg",
+          "Fotos/Paisajes/Lirios/foto53.jpg",
+          "Fotos/Paisajes/Lirios/foto54.jpg",
+          "Fotos/Paisajes/Lirios/foto55.jpg",
+          "Fotos/Paisajes/Lirios/foto56.jpg",
+          "Fotos/Paisajes/Lirios/foto57.jpg"
+        ]
+      },
+      "generalcepeda": {
+        portada: "Fotos/Paisajes/GeneralCepeda/foto1.jpg",
+        titulo: "General Cepeda",
+        fotos: [
+          "Fotos/Paisajes/GeneralCepeda/foto1.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto2.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto3.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto4.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto5.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto6.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto7.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto8.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto9.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto10.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto11.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto12.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto13.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto14.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto15.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto16.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto17.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto18.jpg",
+          "Fotos/Paisajes/GeneralCepeda/foto19.jpg",
+        ]
+      },
+      "cabañas": {
+        portada: "Fotos/Paisajes/Cabanas/foto6.jpg",
+        titulo: "Cabañas",
+        fotos: [
+          "Fotos/Paisajes/Cabanas/foto1.jpg",
+          "Fotos/Paisajes/Cabanas/foto2.jpg",
+          "Fotos/Paisajes/Cabanas/foto3.jpg",
+          "Fotos/Paisajes/Cabanas/foto4.jpg",
+          "Fotos/Paisajes/Cabanas/foto5.jpg",
+          "Fotos/Paisajes/Cabanas/foto6.jpg",
+          "Fotos/Paisajes/Cabanas/foto7.jpg",
+          "Fotos/Paisajes/Cabanas/foto8.jpg",
+          "Fotos/Paisajes/Cabanas/foto9.jpg",
+          "Fotos/Paisajes/Cabanas/foto10.jpg",
+          "Fotos/Paisajes/Cabanas/foto11.jpg",
+          "Fotos/Paisajes/Cabanas/foto12.jpg",
+          "Fotos/Paisajes/Cabanas/foto13.jpg",
+          "Fotos/Paisajes/Cabanas/foto14.jpg",
+          "Fotos/Paisajes/Cabanas/foto15.jpg",
+          "Fotos/Paisajes/Cabanas/foto16.jpg",
+          "Fotos/Paisajes/Cabanas/foto17.jpg",
+          "Fotos/Paisajes/Cabanas/foto18.jpg",
+          "Fotos/Paisajes/Cabanas/foto19.jpg",
+          "Fotos/Paisajes/Cabanas/foto20.jpg",
+          "Fotos/Paisajes/Cabanas/foto21.jpg",
+          "Fotos/Paisajes/Cabanas/foto22.jpg",
+          "Fotos/Paisajes/Cabanas/foto23.jpg",
+          "Fotos/Paisajes/Cabanas/foto24.jpg",
+          "Fotos/Paisajes/Cabanas/foto25.jpg",
+        ]
+      }
+    }
   }
 };
 
@@ -259,9 +454,9 @@ filterBtns.forEach(btn => {
 });
 
 /* ── Carrusel / Lightbox ──────────────────────── */
-const lightbox       = document.getElementById('lightbox');
+const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
-const lightboxClose  = document.getElementById('lightbox-close');
+const lightboxClose = document.getElementById('lightbox-close');
 let currentIndex = 0;
 let currentSeries = [];
 
@@ -269,9 +464,9 @@ gallery.addEventListener('click', e => {
   const item = e.target.closest('.masonry-item');
   if (!item) return;
 
-  const genero     = item.dataset.genero;
+  const genero = item.dataset.genero;
   const nombreSerie = item.dataset.serie;
-  const serie      = series[genero].series[nombreSerie];
+  const serie = series[genero].series[nombreSerie];
 
   currentSeries = serie.fotos.map(src => {
     const img = new Image();
@@ -311,9 +506,9 @@ lightbox.addEventListener('click', e => {
   if (e.target === lightbox) lightbox.classList.remove('open');
 });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape')      lightbox.classList.remove('open');
-  if (e.key === 'ArrowRight')  { currentIndex = (currentIndex + 1) % currentSeries.length; showSlide(currentIndex); }
-  if (e.key === 'ArrowLeft')   { currentIndex = (currentIndex - 1 + currentSeries.length) % currentSeries.length; showSlide(currentIndex); }
+  if (e.key === 'Escape') lightbox.classList.remove('open');
+  if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % currentSeries.length; showSlide(currentIndex); }
+  if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + currentSeries.length) % currentSeries.length; showSlide(currentIndex); }
 });
 
 /* ── Animaciones (después de generar las tarjetas) */

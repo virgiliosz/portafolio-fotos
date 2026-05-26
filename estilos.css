@@ -11,7 +11,7 @@
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Jost', system-ui, sans-serif;
 
-  --max-w: 1100px;
+  --max-w: 1400px;
   --nav-h: 72px;
 }
 
@@ -327,13 +327,13 @@ hr.rule {
 }
 
 .masonry {
-  columns: 2;
+  columns: 3;
   column-gap: 14px;
 }
 
 .masonry-item {
   break-inside: avoid;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
