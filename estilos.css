@@ -327,8 +327,8 @@ hr.rule {
 }
 
 .masonry {
-  columns: 3;
-  column-gap: 12px;
+  columns: 2;
+  column-gap: 14px;
 }
 
 .masonry-item {
