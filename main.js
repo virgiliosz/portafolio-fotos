@@ -453,62 +453,116 @@ filterBtns.forEach(btn => {
   });
 });
 
-/* ── Carrusel / Lightbox ──────────────────────── */
-const lightbox = document.getElementById('lightbox');
+/* ── Mosaico + visor de foto individual ────────── */
+const lightbox        = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
-const lightboxClose = document.getElementById('lightbox-close');
-let currentIndex = 0;
-let currentSeries = [];
+const lightboxClose   = document.getElementById('lightbox-close');
+const lightboxPrev    = document.getElementById('lightbox-prev');
+const lightboxNext    = document.getElementById('lightbox-next');
+const lightboxCounter = document.getElementById('lightbox-counter');
+const lightboxTitle   = document.getElementById('lightbox-title');
 
+let currentSerieFotos = [];
+let currentIndex = 0;
+let serieActivaRef = null; // guarda la serie activa para poder volver al mosaico
+
+/* Abre el mosaico al hacer click en una portada */
 gallery.addEventListener('click', e => {
   const item = e.target.closest('.masonry-item');
   if (!item) return;
 
-  const genero = item.dataset.genero;
+  const genero      = item.dataset.genero;
   const nombreSerie = item.dataset.serie;
-  const serie = series[genero].series[nombreSerie];
+  const serie       = series[genero].series[nombreSerie];
 
-  currentSeries = serie.fotos.map(src => {
-    const img = new Image();
-    img.src = src;
-    img.alt = `${serie.titulo} foto`;
-    return img;
-  });
-
-  currentIndex = 0;
-  showSlide(currentIndex);
+  currentSerieFotos = serie.fotos;
+  serieActivaRef    = serie;
+  showMosaic(serie);
   lightbox.classList.add('open');
 });
 
-function showSlide(index) {
-  const img = currentSeries[index];
-  if (!img) return;
+/* Muestra el mosaico con todas las fotos de la serie */
+function showMosaic(serie) {
+  lightboxTitle.textContent   = serie.titulo;
+  lightboxCounter.textContent = `${serie.fotos.length} fotos`;
+  lightboxPrev.style.display  = 'none';
+  lightboxNext.style.display  = 'none';
+
   lightboxContent.innerHTML = '';
-  const clone = img.cloneNode();
-  clone.style.cssText = 'max-width:85vw;max-height:85vh;object-fit:contain;';
-  lightboxContent.appendChild(clone);
-  document.getElementById('lightbox-counter').textContent =
-    `${index + 1} / ${currentSeries.length}`;
+  lightboxContent.className = 'lightbox-mosaic';
+
+  serie.fotos.forEach((src, index) => {
+    const thumb = document.createElement('div');
+    thumb.className = 'mosaic-thumb';
+    thumb.innerHTML = `<img src="${src}" alt="${serie.titulo} foto ${index + 1}" loading="lazy" />`;
+    thumb.addEventListener('click', () => openSinglePhoto(index));
+    lightboxContent.appendChild(thumb);
+  });
 }
 
-document.getElementById('lightbox-prev').addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + currentSeries.length) % currentSeries.length;
-  showSlide(currentIndex);
+/* Abre una foto individual desde el mosaico */
+function openSinglePhoto(index) {
+  currentIndex = index;
+  lightboxPrev.style.display = 'inline-flex';
+  lightboxNext.style.display = 'inline-flex';
+  lightboxContent.className  = 'lightbox-single';
+  showSinglePhoto();
+}
+
+function showSinglePhoto() {
+  const src = currentSerieFotos[currentIndex];
+  lightboxCounter.textContent = `${currentIndex + 1} / ${currentSerieFotos.length}`;
+  lightboxContent.innerHTML   = `<img src="${src}" alt="foto ${currentIndex + 1}" />`;
+}
+
+/* Volver al mosaico desde foto individual */
+function volverAlMosaico() {
+  if (serieActivaRef) showMosaic(serieActivaRef);
+}
+
+/* Navegación anterior / siguiente */
+lightboxPrev.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + currentSerieFotos.length) % currentSerieFotos.length;
+  showSinglePhoto();
 });
 
-document.getElementById('lightbox-next').addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % currentSeries.length;
-  showSlide(currentIndex);
+lightboxNext.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % currentSerieFotos.length;
+  showSinglePhoto();
 });
 
-lightboxClose.addEventListener('click', () => lightbox.classList.remove('open'));
+/* Cerrar / volver — en foto individual vuelve al mosaico,
+   en mosaico cierra el lightbox completamente             */
+lightboxClose.addEventListener('click', () => {
+  if (lightboxContent.className === 'lightbox-single') {
+    volverAlMosaico();
+  } else {
+    lightbox.classList.remove('open');
+  }
+});
+
 lightbox.addEventListener('click', e => {
   if (e.target === lightbox) lightbox.classList.remove('open');
 });
+
+/* Teclado */
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') lightbox.classList.remove('open');
-  if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % currentSeries.length; showSlide(currentIndex); }
-  if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + currentSeries.length) % currentSeries.length; showSlide(currentIndex); }
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') {
+    if (lightboxContent.className === 'lightbox-single') {
+      volverAlMosaico();
+    } else {
+      lightbox.classList.remove('open');
+    }
+  }
+  if (e.key === 'ArrowRight' && lightboxContent.className === 'lightbox-single') {
+    currentIndex = (currentIndex + 1) % currentSerieFotos.length;
+    showSinglePhoto();
+  }
+  if (e.key === 'ArrowLeft' && lightboxContent.className === 'lightbox-single') {
+    currentIndex = (currentIndex - 1 + currentSerieFotos.length) % currentSerieFotos.length;
+    showSinglePhoto();
+  }
 });
 
 /* ── Animaciones (después de generar las tarjetas) */
