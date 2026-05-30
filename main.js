@@ -447,8 +447,7 @@ filterBtns.forEach(btn => {
     // Leemos las tarjetas en el momento del click, no antes
     document.querySelectorAll('.masonry-item').forEach(item => {
       const show = cat === 'all' || item.dataset.cat === cat;
-      item.style.opacity = show ? '1' : '0.2';
-      item.style.pointerEvents = show ? 'auto' : 'none';
+      item.style.display = show ? '' : 'none';
     });
   });
 });
