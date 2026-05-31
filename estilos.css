@@ -413,6 +413,12 @@ hr.rule {
   padding: 2.5rem 2rem;
   border-right: 1px solid var(--dim);
   transition: background 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-price {
+  margin-top: auto;
 }
 
 .service-card:last-child { border-right: none; }
