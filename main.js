@@ -30,6 +30,7 @@ function initReveal() {
    ─────────────────────────────────────────────── */
 
 const CLOUD = 'https://res.cloudinary.com/dppeq3fhu/image/upload/q_auto,f_auto';
+const CLOUD_VIDEO = 'https://res.cloudinary.com/dppeq3fhu/video/upload/q_auto';
 
 const series = {
   "automovil": {
@@ -232,7 +233,99 @@ const series = {
           `${CLOUD}/graduacion_40.jpg`,
           `${CLOUD}/graduacion_41.jpg`,
           `${CLOUD}/graduacion_42.jpg`,
-          `${CLOUD}/graduacion_43.jpg`
+          `${CLOUD}/graduacion_43.jpg`,
+          `${CLOUD}/graduacion_44.jpg`,
+          `${CLOUD}/graduacion_45.jpg`,
+          `${CLOUD}/graduacion_46.jpg`,
+          `${CLOUD}/graduacion_47.jpg`,
+          `${CLOUD}/graduacion_48.jpg`,
+          `${CLOUD}/graduacion_49.jpg`,
+          `${CLOUD}/graduacion_50.jpg`,
+          `${CLOUD}/graduacion_51.jpg`,
+          `${CLOUD}/graduacion_52.jpg`,
+          `${CLOUD}/graduacion_53.jpg`,
+          `${CLOUD}/graduacion_54.jpg`,
+          `${CLOUD}/graduacion_55.jpg`,
+          `${CLOUD}/graduacion_56.jpg`,
+          `${CLOUD}/graduacion_57.jpg`,
+          `${CLOUD}/graduacion_58.jpg`,
+          `${CLOUD}/graduacion_59.jpg`,
+          `${CLOUD}/graduacion_60.jpg`,
+          `${CLOUD}/graduacion_61.jpg`,
+          `${CLOUD}/graduacion_62.jpg`,
+          `${CLOUD}/graduacion_63.jpg`,
+          `${CLOUD}/graduacion_64.jpg`,
+          `${CLOUD}/graduacion_65.jpg`,
+          `${CLOUD}/graduacion_66.jpg`,
+          `${CLOUD}/graduacion_67.jpg`,
+          `${CLOUD}/graduacion_68.jpg`,
+          `${CLOUD}/graduacion_69.jpg`,
+          `${CLOUD}/graduacion_70.jpg`,
+          `${CLOUD}/graduacion_71.jpg`,
+          `${CLOUD}/graduacion_72.jpg`,
+          `${CLOUD}/graduacion_73.jpg`,
+          `${CLOUD}/graduacion_74.jpg`,
+          `${CLOUD}/graduacion_75.jpg`,
+          `${CLOUD}/graduacion_76.jpg`,
+          `${CLOUD}/graduacion_77.jpg`,
+          `${CLOUD}/graduacion_78.jpg`,
+          `${CLOUD}/graduacion_79.jpg`,
+          `${CLOUD}/graduacion_80.jpg`,
+          `${CLOUD}/graduacion_81.jpg`,
+          `${CLOUD}/graduacion_82.jpg`,
+          `${CLOUD}/graduacion_83.jpg`,
+          `${CLOUD}/graduacion_84.jpg`,
+          `${CLOUD}/graduacion_85.jpg`,
+          `${CLOUD}/graduacion_86.jpg`,
+          `${CLOUD}/graduacion_87.jpg`,
+          `${CLOUD}/graduacion_88.jpg`,
+          `${CLOUD}/graduacion_89.jpg`,
+          `${CLOUD}/graduacion_90.jpg`,
+          `${CLOUD}/graduacion_91.jpg`,
+          `${CLOUD}/graduacion_92.jpg`,
+          `${CLOUD}/graduacion_93.jpg`,
+          `${CLOUD}/graduacion_94.jpg`,
+          `${CLOUD}/graduacion_95.jpg`,
+          `${CLOUD}/graduacion_96.jpg`,
+          `${CLOUD}/graduacion_97.jpg`,
+          `${CLOUD}/graduacion_98.jpg`,
+          `${CLOUD}/graduacion_99.jpg`,
+          `${CLOUD}/graduacion_100.jpg`,
+          `${CLOUD}/graduacion_101.jpg`,
+          `${CLOUD}/graduacion_102.jpg`,
+          `${CLOUD}/graduacion_103.jpg`,
+          `${CLOUD}/graduacion_104.jpg`,
+          `${CLOUD}/graduacion_105.jpg`,
+          `${CLOUD}/graduacion_106.jpg`,
+          `${CLOUD}/graduacion_107.jpg`,
+          `${CLOUD}/graduacion_108.jpg`,
+          `${CLOUD}/graduacion_109.jpg`,
+          `${CLOUD}/graduacion_110.jpg`,
+          `${CLOUD}/graduacion_111.jpg`,
+          `${CLOUD}/graduacion_112.jpg`,
+          `${CLOUD}/graduacion_113.jpg`,
+          `${CLOUD}/graduacion_114.jpg`,
+          `${CLOUD}/graduacion_115.jpg`,
+          `${CLOUD}/graduacion_116.jpg`,
+          `${CLOUD}/graduacion_117.jpg`,
+          `${CLOUD}/graduacion_118.jpg`,
+          `${CLOUD}/graduacion_119.jpg`,
+          `${CLOUD}/graduacion_120.jpg`,
+          `${CLOUD}/graduacion_121.jpg`,
+          `${CLOUD}/graduacion_122.jpg`,
+          `${CLOUD}/graduacion_123.jpg`,
+          `${CLOUD}/graduacion_124.jpg`,
+          `${CLOUD}/graduacion_125.jpg`,
+          `${CLOUD}/graduacion_126.jpg`,
+          `${CLOUD}/graduacion_127.jpg`,
+          `${CLOUD}/graduacion_128.jpg`,
+          `${CLOUD}/graduacion_129.jpg`,
+          `${CLOUD}/graduacion_130.jpg`,
+          `${CLOUD}/graduacion_131.jpg`,
+          `${CLOUD}/graduacion_132.jpg`,
+          `${CLOUD}/graduacion_133.jpg`,
+          `${CLOUD}/graduacion_134.jpg`,
+          `${CLOUD}/graduacion_135.jpg`
         ]
       }
     }
@@ -411,6 +504,40 @@ const series = {
         ]
       }
     }
+  },
+  "arquitectura": {
+    titulo: "Arquitectura",
+    series: {
+      "arquitectura": {
+        portada: `${CLOUD}/arquitectura_5.jpg`,
+        titulo: "Graduacion",
+        fotos: [
+          `${CLOUD}/arquitectura_1.jpg`,
+          `${CLOUD}/arquitectura_2.jpg`,
+          `${CLOUD}/arquitectura_3.jpg`,
+          `${CLOUD}/arquitectura_4.jpg`,
+          `${CLOUD}/arquitectura_5.jpg`
+        ]
+      }
+    }
+  },
+  "videos": {
+    titulo: "Videos",
+    series: {
+      "videos": {
+        portada: `${CLOUD}/portada_videos.png`,
+        titulo: "Videos",
+        fotos: [],
+        videos: [
+          {src: `${CLOUD_VIDEO}/nascar_edit.mp4`, segundo: 20},
+          {src: `${CLOUD_VIDEO}/Golf_fenix_final.mp4`, segundo: 4},
+          {src: `${CLOUD_VIDEO}/LOTR.mp4`, segundo: 2},
+          {src: `${CLOUD_VIDEO}/Take_Me_To_The_Moon.mp4`, segundo: 1},
+          {src: `${CLOUD_VIDEO}/23.mp4`, segundo: 4},
+          {src: `${CLOUD_VIDEO}/Hulk_pasada.mp4`, segundo: 9},
+        ]
+      }
+    }
   }
 };
 
@@ -456,13 +583,13 @@ filterBtns.forEach(btn => {
 });
 
 /* ── Mosaico + visor de foto individual ────────── */
-const lightbox        = document.getElementById('lightbox');
+const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
-const lightboxClose   = document.getElementById('lightbox-close');
-const lightboxPrev    = document.getElementById('lightbox-prev');
-const lightboxNext    = document.getElementById('lightbox-next');
+const lightboxClose = document.getElementById('lightbox-close');
+const lightboxPrev = document.getElementById('lightbox-prev');
+const lightboxNext = document.getElementById('lightbox-next');
 const lightboxCounter = document.getElementById('lightbox-counter');
-const lightboxTitle   = document.getElementById('lightbox-title');
+const lightboxTitle = document.getElementById('lightbox-title');
 
 let currentSerieFotos = [];
 let currentIndex = 0;
@@ -473,33 +600,58 @@ gallery.addEventListener('click', e => {
   const item = e.target.closest('.masonry-item');
   if (!item) return;
 
-  const genero      = item.dataset.genero;
+  const genero = item.dataset.genero;
   const nombreSerie = item.dataset.serie;
-  const serie       = series[genero].series[nombreSerie];
+  const serie = series[genero].series[nombreSerie];
 
   currentSerieFotos = serie.fotos;
-  serieActivaRef    = serie;
+  serieActivaRef = serie;
   showMosaic(serie);
   lightbox.classList.add('open');
 });
 
 /* Muestra el mosaico con todas las fotos de la serie */
 function showMosaic(serie) {
-  lightboxTitle.textContent   = serie.titulo;
-  lightboxCounter.textContent = `${serie.fotos.length} fotos`;
-  lightboxPrev.style.display  = 'none';
-  lightboxNext.style.display  = 'none';
+  lightboxTitle.textContent = serie.titulo;
+  lightboxCounter.textContent = `${serie.videos ? serie.videos.length : serie.fotos.length} elementos`;
+  lightboxPrev.style.display = 'none';
+  lightboxNext.style.display = 'none';
 
   lightboxContent.innerHTML = '';
-  lightboxContent.className = 'lightbox-mosaic';
+  const esVideo = !!serie.videos;
+  lightboxContent.className = esVideo ? 'lightbox-mosaic es-video' : 'lightbox-mosaic';
 
-  serie.fotos.forEach((src, index) => {
+  const elementos = serie.videos || serie.fotos;
+
+  elementos.forEach((elemento, index) => {
     const thumb = document.createElement('div');
     thumb.className = 'mosaic-thumb';
-    thumb.innerHTML = `<img src="${src}" alt="${serie.titulo} foto ${index + 1}" loading="lazy" />`;
-    thumb.addEventListener('click', () => openSinglePhoto(index));
+
+    if (esVideo) {
+      thumb.innerHTML = `
+        <img src="${miniatura(elemento.src, elemento.segundo)}" alt="preview" loading="lazy" />
+        <div class="play-icon">▶</div>
+      `;
+      thumb.addEventListener('click', () => openSingleVideo(elemento.src));
+    } else {
+      thumb.innerHTML = `<img src="${elemento}" alt="${serie.titulo} foto ${index + 1}" loading="lazy" />`;
+      thumb.addEventListener('click', () => openSinglePhoto(index));
+    }
+
     lightboxContent.appendChild(thumb);
   });
+}
+
+/* Abre un video individual desde el mosaico */
+function openSingleVideo(src) {
+  lightboxPrev.style.display = 'none';
+  lightboxNext.style.display = 'none';
+  lightboxContent.className = 'lightbox-single';
+  lightboxContent.innerHTML = `
+    <video src="${src}" controls autoplay
+      style="max-width:85vw;max-height:85vh;">
+    </video>`;
+  lightboxCounter.textContent = '';
 }
 
 /* Abre una foto individual desde el mosaico */
@@ -507,14 +659,20 @@ function openSinglePhoto(index) {
   currentIndex = index;
   lightboxPrev.style.display = 'inline-flex';
   lightboxNext.style.display = 'inline-flex';
-  lightboxContent.className  = 'lightbox-single';
+  lightboxContent.className = 'lightbox-single';
   showSinglePhoto();
+}
+
+function miniatura(urlVideo, segundo = 0) {
+  return urlVideo
+    .replace('video/upload/', `video/upload/so_${segundo}/`)
+    .replace('.mp4', '.jpg');
 }
 
 function showSinglePhoto() {
   const src = currentSerieFotos[currentIndex];
   lightboxCounter.textContent = `${currentIndex + 1} / ${currentSerieFotos.length}`;
-  lightboxContent.innerHTML   = `<img src="${src}" alt="foto ${currentIndex + 1}" />`;
+  lightboxContent.innerHTML = `<img src="${src}" alt="foto ${currentIndex + 1}" />`;
 }
 
 /* Volver al mosaico desde foto individual */
