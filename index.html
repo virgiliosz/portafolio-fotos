@@ -54,8 +54,7 @@
       <div class="inner">
 
         <div class="about-photo">
-          <img src="https://res.cloudinary.com/dppeq3fhu/image/upload/Vir_Grey_-15.jpg"
-            alt="Virgilio Sánchez, fotógrafo" />
+          <img src="https://res.cloudinary.com/dppeq3fhu/image/upload/Vir_Grey_-15.jpg" alt="Virgilio Sánchez, fotógrafo" />
         </div>
 
         <div class="about-text reveal">
@@ -194,29 +193,29 @@
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xnjkprzz" method="POST">
+        <form class="contact-form reveal" onsubmit="handleSubmit(event)">
           <div class="field">
             <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required />
+            <input type="text" id="nombre" placeholder="Ej. Ana Martínez" required />
           </div>
           <div class="field">
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+            <input type="email" id="email" placeholder="tu@correo.com" required />
           </div>
           <div class="field">
             <label for="servicio">Tipo de sesión</label>
-            <select id="servicio" name="servicio">
+            <select id="servicio">
               <option value="" disabled selected>Selecciona un servicio</option>
               <option>Retrato personal</option>
-              <option>Eventos</option>
-              <option>Automotriz</option>
-              <option>Creación de videos</option>
+              <option>Fotografía editorial</option>
+              <option>Paisaje &amp; viaje</option>
+              <option>Impresiones de arte</option>
               <option>Otro / consulta</option>
             </select>
           </div>
           <div class="field">
             <label for="mensaje">Cuéntame más</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Fecha aproximada, lugar, ideas..." required></textarea>
+            <textarea id="mensaje" placeholder="Fecha aproximada, lugar, ideas..." required></textarea>
           </div>
           <button type="submit" class="btn-send" id="submit-btn">Enviar mensaje</button>
         </form>
